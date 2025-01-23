@@ -1,21 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
-import FicheLogementPage from './pages/fiche-logement';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Apropos from './pages/A_propos';
 
 const App = () => {
   return (
     <Router>
-      <Header />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/fiche_logement" element={<FicheLogementPage />} />
+          <Route path="/A_propos" element={<Apropos />} />
         </Routes>
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </Router>
   );
 };
