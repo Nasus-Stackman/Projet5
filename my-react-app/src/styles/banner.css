@@ -1,6 +1,7 @@
 .banner{
     width: 85%;
     margin: auto;
+    padding: 20px;
 }
 
 .article_img{
@@ -19,9 +20,11 @@
 }
 
 .title_banner{
+    font-size: 48px;
+    font-weight: 700;
     color: white;
     position: absolute;
-    top: 40%;  
-    left: 40%;
+    top: 20%;  
+    left: 23%;
     z-index: 2;
 }

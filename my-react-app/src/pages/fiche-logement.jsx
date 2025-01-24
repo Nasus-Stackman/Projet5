@@ -1,10 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
+import Tag from '../components/Tag';
+import Footer from '../components/footer';
+import '../styles/fiche_logement.css'
 
 const FicheLogementPage = () => {
   return (
     <div>
-      <h1>Fiche du Logement</h1>
-      <p>Voici la fiche détaillée d'un logement spécifique.</p>
+      <Header />
+      <Tag/>
+      <Footer />
     </div>
   );
 };

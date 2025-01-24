@@ -4,16 +4,19 @@
     height: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .footer__text{
     color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 4px;
 }
 
 .footer__logo{
     width: 122px;
     height: 20%;
-    padding: 15px;
+    padding: 18px;
 }

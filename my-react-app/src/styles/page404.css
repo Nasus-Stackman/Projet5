@@ -1,0 +1,32 @@
+.title_404, .message_404, .return_404{
+    text-align: center;
+}
+
+.title_404, .message_404{
+    color: #FF6060;
+}
+
+.title_404{
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.message_404{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.return_404{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.return_404:hover{
+    text-decoration: underline;
+}

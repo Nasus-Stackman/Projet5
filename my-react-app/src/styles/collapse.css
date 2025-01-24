@@ -1,0 +1,33 @@
+.collapse{
+    background-color:#FF6060;
+    color: white;
+    height: 52px;
+    width: 70%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
+.title_collapse{
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.collapse button{
+    height: 32px;
+    width: 32px;
+}
+
+
+.div_collapse{
+    height: 100px;
+    width: 100%;
+    background-color: #F6F6F6 ;
+    color: black;
+    position: relative;
+    top:50%;
+    font-size: 12px;
+}
