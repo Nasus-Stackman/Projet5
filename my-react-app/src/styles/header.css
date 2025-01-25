@@ -6,15 +6,12 @@
     padding: 40px;
 }
  
-.nav {
-    width: 28%;
-}
-
 .link{
     list-style-type: none;
     display : flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 120px;
+    padding: 0px;
 }
 
 .link a{

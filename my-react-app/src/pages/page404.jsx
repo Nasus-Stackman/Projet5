@@ -8,7 +8,7 @@ function Page404() {
         <div>
         <Header />
             <h1 className='title_404'>404</h1>
-            <h2 className='message_404' >Oups, la page que vous demandez n'existe pas.</h2>
+            <h2 className='message_404' >Oups! La page que vous demandez n'existe pas.</h2>
             <h3 className='return_404' >Retourner sur la page d'accueil </h3>
             <Footer />
         </div>

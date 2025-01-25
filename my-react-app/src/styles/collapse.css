@@ -14,13 +14,26 @@
     margin: 0px;
     font-size: 24px;
     font-weight: 700;
+    padding: 12px;
 }
 
 .collapse button{
+    background-color:#FF6060;
     height: 32px;
     width: 32px;
+    border: none;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
+.icone{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
 
 .div_collapse{
     height: 100px;
@@ -28,6 +41,7 @@
     background-color: #F6F6F6 ;
     color: black;
     position: relative;
-    top:50%;
+    top: 100%;
     font-size: 12px;
 }
+

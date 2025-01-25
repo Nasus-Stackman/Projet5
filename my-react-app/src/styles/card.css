@@ -1,6 +1,26 @@
 .card{
     height: 340px;
     width: 340px;
-    background-color: red;
     border-radius: 10px;
+    background-color: red;
+    z-index: 1;
+}
+
+.card img{
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card h2{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 2;
+    color: white;
+    position: relative;
+    top: 100%;
+    left: 10%;
+
 }

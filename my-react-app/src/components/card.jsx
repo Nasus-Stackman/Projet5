@@ -1,11 +1,15 @@
 import React from 'react';
 import '../styles/card.css';
+import { Link } from 'react-router-dom';
 
-const Card = ({ titre }) => {
+const Card = ({ title, src }) => {
   return (
-    <a>
-      <article className='card'>Article -{titre}</article>
-    </a>
+    <Link to="/fiche_logement">
+      <article className='card' >
+        <h2>{title}</h2>
+        <img src={src}/> 
+        </article>
+    </Link>
   )
 };
 
