@@ -1,0 +1,34 @@
+.carrousel{
+    height: 415px;
+    width: 85%;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.carrousel img{
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.text_hidden{
+    visibility: hidden;
+}
+
+.button_prev{
+    position: relative;
+    bottom: 60%;
+    opacity: 0; 
+}
+
+.button_next{
+    position: relative;
+    bottom: 60%;
+    left: 80%;
+}
+
+.icone{
+    font-size: 80px;
+    opacity: 1;
+}

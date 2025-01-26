@@ -1,0 +1,52 @@
+.title_logement{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.location_logement{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.div_main{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.div_main_collapse{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.host{
+    display: flex;
+}
+
+.host_name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    align-self: center;
+}
+
+.figure{
+    height: 64px;
+    width: 64px;
+    border-radius: 45px;
+    background-color: blue;
+}
+
+.figure img{
+    height: 64px;
+    width: 100%;
+    border-radius: 45px;
+}
+
+.star{
+    color: #FF6060;
+}
