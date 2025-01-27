@@ -5,7 +5,12 @@
     margin: auto;
     padding: 40px;
 }
- 
+
+.logo_kasa{
+    height: 68px;
+    width: 20%;
+}
+
 .link{
     list-style-type: none;
     display : flex;
@@ -23,4 +28,24 @@
 
 .link a:hover{
     text-decoration: underline;
+}
+
+
+@media (max-width: 767.98px) {
+
+
+    .logo_kasa{
+        height: 46px;
+        width: 40%;
+    }
+    
+    .link a{
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .link{
+        gap: 26px;
+    }
+
 }

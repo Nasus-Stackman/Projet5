@@ -24,7 +24,31 @@
     font-weight: 700;
     color: white;
     position: absolute;
-    top: 20%;  
-    left: 23%;
+    top: 35%;  
+    left: 30%;
     z-index: 2;
+    margin: auto;
+    transform: translate(-23%, -20%);
+}
+
+@media (max-width: 767.98px) {
+
+    .title_banner{
+        font-size: 24px;
+        top: 25%;
+        left: 10%;
+        padding-right: 24%;
+        padding-bottom: 20px;
+        transform: translate(-2%, -8%);
+    }
+    
+    .article_img{
+        height: 110px;
+    }
+
+    .banner img{
+        height: 110px;
+    }
+
+
 }

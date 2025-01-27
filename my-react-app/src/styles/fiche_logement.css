@@ -2,12 +2,15 @@
     font-size: 36px;
     font-weight: 500;
     color: #FF6060;
+    margin-bottom: 5px;
 }
 
 .location_logement{
     font-size: 18px;
     font-weight: 500;
     color: black;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .div_main{
@@ -15,7 +18,7 @@
     justify-content: space-between;
     width: 85%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .div_main_title{
@@ -77,4 +80,66 @@
 
 .neutral{
     color: #E3E3E3;
+}
+
+@media (max-width: 767.98px) {
+
+    .div_main{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .div_main_title{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .title_logement{
+        font-size: 18px;
+    }
+
+    .div_main_rating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .div_host{
+        gap: 5px;
+    }
+
+    .div_stars{
+        align-items: center;
+    }
+
+    .div_main_collapse{
+        flex-direction: column;
+    }
+
+    .location_logement{
+        font-size: 14px;
+    }
+
+    .figure{
+        height: 40px;
+        width: 40px;
+        border-radius: 45px;
+        margin: 8px;
+        margin-top: 20px;
+    }
+    
+    .figure img{
+        height: 40px;
+        width: 100%;
+        border-radius: 45px;
+    }
+
+    .host_name{
+        font-size: 16px;
+    }
+
+    .star, .neutral{
+        font-size: 16px;
+        margin: 3px;
+    }
 }

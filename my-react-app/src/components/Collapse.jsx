@@ -12,7 +12,7 @@ function Collapse({ titre_collapse, description }) {
             <h2 className='title_collapse'>{titre_collapse}</h2>
             <button onClick={toggleCollapse}><span className='hidden'>Cliquer</span><i className="icone fa-solid fa-chevron-up"></i></button>
             {isOpen && (
-                <div className='div_collapse'>
+                <div className={`div_collapse ${isOpen ? 'open' : ''}`}>
                     <p>{description}</p>
                 </div>
             )}

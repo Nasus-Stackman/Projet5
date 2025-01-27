@@ -1,50 +1,72 @@
-.collapse{
-    background-color:#FF6060;
+.collapse {
+    background-color: #FF6060;
     color: white;
     height: 52px;
     width: 70%;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     margin: auto;
     margin-bottom: 38px;
+    position: relative;
 }
 
-.title_collapse{
+.title_collapse {
     margin: 0px;
     font-size: 24px;
     font-weight: 700;
     padding: 12px;
+    width: 90%;
 }
 
-.collapse button{
-    background-color:#FF6060;
+.collapse button {
+    background-color: #FF6060;
     height: 32px;
     width: 32px;
     border: none;
     padding-right: 10px;
+    display: inline-flex;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
-.icone{
+.icone {
     color: white;
     font-size: 20px;
     padding-bottom: 10px;
     padding-right: 10px;
 }
 
-.div_collapse{
+.div_collapse {
     height: 100px;
-    width: 100%;
-    background-color: #F6F6F6 ;
+    width: 140%;
+    background-color: #F6F6F6;
     color: black;
     position: relative;
     top: 100%;
     font-size: 12px;
     padding: 8px;
     padding-right: 20px;
-} 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
 
+.collapse .div_collapse.open {
+    max-height: 200px; /* ajuste cette valeur en fonction de la taille de ton contenu */
+  }
+
+@media (max-width: 767.98px) {
+
+    .collapse {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .title_collapse {
+        font-size: 18px;
+        padding: 14px;
+    }
+}

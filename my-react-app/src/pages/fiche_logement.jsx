@@ -18,10 +18,11 @@ const FicheLogementPage = () => {
   Object.pictures.map((elem) =>
     Vignettes.push(elem)
   )
+  const Taille = Vignettes.length
   return (
     <div>
       <Header />
-      <Carrousel Vignettes={Vignettes} />
+      <Carrousel taille={Taille} Vignettes={Vignettes} />
       <div className='div_main'>
         <div className='div_main_title'>
           <h1 className='title_logement'>{Object.title}</h1>
@@ -44,7 +45,7 @@ const FicheLogementPage = () => {
         </div>
       </div>
       <div className='div_main_collapse'>
-        <Collapse titre_collapse='description' description={Object.description} />
+        <Collapse titre_collapse='Description' description={Object.description} />
         <Collapse titre_collapse='Équipements' description={Object.equipments.map((elem, index) =>
           <span key={index}>{elem}<br /></span>)} />
       </div>

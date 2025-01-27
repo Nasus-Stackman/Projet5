@@ -31,3 +31,10 @@
     text-decoration: none; 
     width: 29%;
 }
+
+@media (max-width: 767.98px) {
+
+    .style{
+        width: 100%;
+    }
+}

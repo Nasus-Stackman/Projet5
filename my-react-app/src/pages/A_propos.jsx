@@ -7,7 +7,7 @@ import image2 from '../assets/Image_montagnes.png';
 
 const Apropos = () => {
     const ListeTitre = ['Fiabilité', 'Respect', 'Service', 'Sécurité'];
-    const ListeDescription = ['Les annonces', 'La bienveillance', 'La qualité', 'La sécurité']
+    const ListeDescription = ['Les annonces postés sur Kasa garanrissent une fiabilité totale. Les Photos sont conformes aux logements, et toutes les informations sont régulièrement véfifiées par nos équipes.', 'La bienveillance fait partie des valeurs fondatrices che Kasa.', 'La qualité', 'La sécurité est la priorité de Kasa']
     return (
         <div>
             <Header />
