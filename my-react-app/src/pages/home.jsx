@@ -15,7 +15,7 @@ const Home = () => {
       <main className='main'>
         {
           Data.map((elem) =>
-            <Card key={elem.id} src={elem.cover} title={elem.title} />
+            <Card key={elem.id} key1={elem.id} src={elem.cover} title={elem.title} />
           )
         }
       </main>

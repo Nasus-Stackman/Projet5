@@ -1,11 +1,12 @@
-.carrousel{
+.div_carrousel{
     height: 415px;
     width: 85%;
     border-radius: 25px;
     margin: auto;
+    margin-bottom: 15px;
 }
 
-.carrousel img{
+.div_carrousel img{
     height: 415px;
     width: 100%;
     border-radius: 25px;
@@ -16,10 +17,14 @@
     visibility: hidden;
 }
 
+.div_carrousel button{
+    background: transparent;
+    border: none;
+}
+
 .button_prev{
     position: relative;
     bottom: 60%;
-    opacity: 0; 
 }
 
 .button_next{
@@ -28,7 +33,6 @@
     left: 80%;
 }
 
-.icone{
+.div_carrousel .icone{
     font-size: 80px;
-    opacity: 1;
 }

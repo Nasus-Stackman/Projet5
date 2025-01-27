@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/tag.css'
 
-function Tag({titretag}){
-    return(
+function Tag({ titretag }) {
+    return (
         <div className='tag'>
-         <h3>{titretag}</h3>
+            <p className='tag_title'>{titretag}</p>
         </div>
     )
 }

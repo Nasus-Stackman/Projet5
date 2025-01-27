@@ -15,30 +15,44 @@
     justify-content: space-between;
     width: 85%;
     margin: auto;
+    margin-bottom: 20px;
+}
+
+.div_main_title{
+    width: 65%;
+}
+
+.div_tags{
+    display: flex;
+    gap: 2%;
 }
 
 .div_main_collapse{
     display: flex;
     width: 85%;
     margin: auto;
+    gap: 5%;
 }
 
-.host{
+.div_host{
     display: flex;
+    justify-content: flex-end;
 }
 
 .host_name{
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
-    align-self: center;
+    text-align: right;
+    width: 30%;
+    line-height: 25px;
 }
 
 .figure{
     height: 64px;
     width: 64px;
     border-radius: 45px;
-    background-color: blue;
+    margin: 12px;
 }
 
 .figure img{
@@ -47,6 +61,20 @@
     border-radius: 45px;
 }
 
+.div_stars{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.star, .neutral{
+    margin: 6px;
+    font-size: 22px;
+}
+
 .star{
     color: #FF6060;
+}
+
+.neutral{
+    color: #E3E3E3;
 }
