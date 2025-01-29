@@ -7,13 +7,21 @@ import Footer from '../components/footer';
 import Data from '../datas/liste.json'
 import '../styles/fiche_logement.css'
 import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const FicheLogementPage = () => {
-  const { key } = useParams();                        /* pour fixer l'id du fichier JSON sur la page*/
+  const { key } = useParams();                                 /* pour fixer l'id du fichier JSON sur la page*/
   const navigate = useNavigate();
-  const AllKey = []
-  Data.map((elem) => AllKey.push(elem.id))             /* Je récupère toutes les id valides avant la comparaison */
-  AllKey.includes(key) ? console.log(key) : (navigate("*", { replace: true }))
+  const AllKey = Data.map((elem) => elem.id);                   /* Je récupère toutes les id valides avant la comparaison */
+  useEffect(() => {
+    if (!AllKey.includes(key)) {
+      // Si l'ID n'est pas valide, navigue vers une route invalide
+      navigate('/404', { replace: true });
+    }
+  }, [key, navigate]);
+  if (!AllKey.includes(key)) {
+    return null;
+  }
   const Object = Data.find(elem => elem.id === key)   /* find marche mieux que filter, car filter nécéssite un [0]*/
   const range = [1, 2, 3, 4, 5]                       /* je créé un tableau pour la comparaison avec le 'rating'*/
   const value = parseInt(Object.rating)               /* parseInt pour convertir le str du JSON en int*/

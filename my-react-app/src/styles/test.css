@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  padding: 40px;
+}
+.header .header__logo {
+  height: 68px;
+  width: 20%;
+}
+.header .link {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 0;
+}
+.header .link a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.header .link a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 767.98px) {
+  .header .header__logo {
+    height: 46px;
+    width: 40%;
+  }
+  .header .link a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .header .link {
+    gap: 26px;
+  }
+}
+
+/*# sourceMappingURL=test.css.map */

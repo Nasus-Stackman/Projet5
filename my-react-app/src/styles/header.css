@@ -6,7 +6,7 @@
     padding: 40px;
 }
 
-.logo_kasa{
+.header__logo{
     height: 68px;
     width: 20%;
 }
@@ -30,11 +30,9 @@
     text-decoration: underline;
 }
 
-
 @media (max-width: 767.98px) {
 
-
-    .logo_kasa{
+    .header__logo{
         height: 46px;
         width: 40%;
     }
@@ -47,5 +45,4 @@
     .link{
         gap: 26px;
     }
-
 }

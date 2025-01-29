@@ -1,4 +1,4 @@
-.title_404, .message_404, .return_404{
+.title_404, .message_404, h3{
     text-align: center;
 }
 
@@ -20,13 +20,36 @@
     margin-bottom: 30px;
 }
 
-.return_404{
+h3{
     margin-top: 100px;
     margin-bottom: 100px;
+
+}
+
+.return_404{
     font-size: 18px;
     font-weight: 500;
+    text-decoration: none; 
+    color: black;
 }
 
 .return_404:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  
+    .title_404{
+        font-size: 120px;
+        font-weight: 700;
+    }
+
+    .message_404{
+        font-size: 22px;
+    }
+
+    .return_404{
+        font-size: 16px;
+    }
+    
 }
