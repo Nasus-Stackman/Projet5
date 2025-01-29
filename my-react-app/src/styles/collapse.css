@@ -5,10 +5,8 @@
     width: 70%;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     margin: auto;
     margin-bottom: 38px;
-    position: relative;
 }
 
 .title_collapse {
@@ -16,7 +14,7 @@
     font-size: 24px;
     font-weight: 700;
     padding: 12px;
-    width: 90%;
+    width: 93%;
 }
 
 .collapse button {
@@ -25,38 +23,66 @@
     width: 32px;
     border: none;
     padding-right: 10px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
 }
+
 
 .hidden {
     visibility: hidden;
 }
 
-.icone {
+.icone_collapse {
     color: white;
     font-size: 20px;
     padding-bottom: 10px;
     padding-right: 10px;
+    position: relative;
+    top: 10%;
+    right: 90%;
 }
 
 .div_collapse {
     height: 100px;
-    width: 140%;
+    width: 70%;
     background-color: #F6F6F6;
     color: black;
+    margin: auto;
     position: relative;
     top: 100%;
-    font-size: 12px;
-    padding: 8px;
-    padding-right: 20px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
 
-.collapse .div_collapse.open {
-    max-height: 200px; /* ajuste cette valeur en fonction de la taille de ton contenu */
-  }
+.text_collapse{
+    font-size: 12px;  
+    padding: 15px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.div_collapse.open {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
+    display: block;
+    margin-bottom: 38px;
+}
+
+.collapse.open{
+    margin-bottom: 0px;
+}
+
+.icone_collapse.open{
+    bottom: 140%;
+    right: 140%;
+}
 
 @media (max-width: 767.98px) {
 
@@ -68,5 +94,13 @@
     .title_collapse {
         font-size: 18px;
         padding: 14px;
+    }
+
+    .div_collapse{
+        width: 100%;
+    }
+
+    .text_collapse{
+        font-size: 11px;
     }
 }

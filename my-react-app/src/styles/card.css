@@ -18,13 +18,14 @@
     z-index: 2;
     color: white;
     position: relative;
-    bottom: 20%;
+    bottom: 26%;
     left: 2%;
     margin: 0px;
     padding-left: 10px;
     padding-right: 80px;
-    padding-bottom: 5px;
+    padding-bottom: 5x;
     max-width: 100%;
+    line-height: 25px;
 }
 
 .style{

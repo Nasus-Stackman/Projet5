@@ -5,12 +5,15 @@ import Tag from '../components/Tag';
 import Collapse from '../components/Collapse'
 import Footer from '../components/footer';
 import Data from '../datas/liste.json'
-import Home from './home';
 import '../styles/fiche_logement.css'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const FicheLogementPage = () => {
   const { key } = useParams();                        /* pour fixer l'id du fichier JSON sur la page*/
+  const navigate = useNavigate();
+  const AllKey = []
+  Data.map((elem) => AllKey.push(elem.id))             /* Je récupère toutes les id valides avant la comparaison */
+  AllKey.includes(key) ? console.log(key) : (navigate("*", { replace: true }))
   const Object = Data.find(elem => elem.id === key)   /* find marche mieux que filter, car filter nécéssite un [0]*/
   const range = [1, 2, 3, 4, 5]                       /* je créé un tableau pour la comparaison avec le 'rating'*/
   const value = parseInt(Object.rating)               /* parseInt pour convertir le str du JSON en int*/
@@ -45,8 +48,8 @@ const FicheLogementPage = () => {
         </div>
       </div>
       <div className='div_main_collapse'>
-        <Collapse titre_collapse='Description' description={Object.description} />
-        <Collapse titre_collapse='Équipements' description={Object.equipments.map((elem, index) =>
+        <Collapse custom_div='div_1 div_2' custom_collapse='custom_collapse' custom_div_collapse='custom_div_collapse' titre_collapse='Description' description={Object.description} />
+        <Collapse custom_div='div_1 div_2' custom_collapse='custom_collapse' custom_div_collapse='custom_div_collapse' titre_collapse='Équipements' description={Object.equipments.map((elem, index) =>
           <span key={index}>{elem}<br /></span>)} />
       </div>
       <Footer />

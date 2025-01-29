@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import Footer from '../components/footer';
 import image2 from '../assets/Image_montagnes.png';
+import '../styles/A_propos.css'
 
 const Apropos = () => {
     const ListeTitre = ['Fiabilité', 'Respect', 'Service', 'Sécurité'];
@@ -12,9 +13,12 @@ const Apropos = () => {
         <div>
             <Header />
             <Banner src={image2} alt='Image de montagnes' />
-            {ListeTitre.map((elem, index) =>
-                <Collapse key={index} titre_collapse={elem} description={ListeDescription[index]} />
-            )}
+            <div className='div_apropos_collapse'>
+                {ListeTitre.map((elem, index) =>
+                    <Collapse key={index} titre_collapse={elem} description={ListeDescription[index]} />
+                )}
+            </div>
+
             <Footer />
 
         </div>
