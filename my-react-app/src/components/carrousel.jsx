@@ -16,15 +16,15 @@ function Carrousel({ taille, Vignettes }) {
         taille >= 2 ? (
             <div className='div_carrousel'>
                 <img src={Vignettes[currentIndex]} />
-                <button className='button_prev' onClick={prevSlide}>
-                    <span className='text_hidden'>Précédent</span>
+                <button className='div_carrousel__button_prev' onClick={prevSlide}>
+                    <span className='div_carrousel__text_hidden'>Précédent</span>
                     <i className="icone fa-solid fa-chevron-left"></i>
                 </button>
-                <button className='button_next' onClick={nextSlide}>
-                    <span className='text_hidden'>Suivant</span>
+                <button className='div_carrousel__button_next' onClick={nextSlide}>
+                    <span className='div_carrousel__text_hidden'>Suivant</span>
                     <i className="icone fa-solid fa-chevron-right"></i>
                 </button>
-                <div className="counter">
+                <div className="div_carrousel__counter">
                     {currentIndex + 1} / {Vignettes.length}
                 </div>
             </div>) : (<div className='div_carrousel'><img src={Vignettes} /></div>)

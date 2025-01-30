@@ -11,7 +11,7 @@
     width: 20%;
 }
 
-.link{
+.navbar__link{
     list-style-type: none;
     display : flex;
     justify-content: space-between;
@@ -19,30 +19,36 @@
     padding: 0px;
 }
 
-.link a{
+.navbar__link a{
     font-size: 24px;
     font-weight: 500;
     text-decoration: none; 
     color: black;
 }
 
-.link a:hover{
+.navbar__link a:hover{
     text-decoration: underline;
 }
 
 @media (max-width: 767.98px) {
 
+    .header{
+        padding: 2%;
+        width: 90%;
+    }
+    
+
     .header__logo{
         height: 46px;
         width: 40%;
     }
-    
-    .link a{
-        font-size: 12px;
-        text-transform: uppercase;
+
+    .navbar__link{
+        gap: 26px;
     }
 
-    .link{
-        gap: 26px;
+    .navbar__link a{
+        font-size: 12px;
+        text-transform: uppercase;
     }
 }

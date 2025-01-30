@@ -26,14 +26,14 @@ h3{
 
 }
 
-.return_404{
+.return_home{
     font-size: 18px;
     font-weight: 500;
     text-decoration: none; 
     color: black;
 }
 
-.return_404:hover{
+.return_home:hover{
     text-decoration: underline;
 }
 
@@ -48,7 +48,7 @@ h3{
         font-size: 22px;
     }
 
-    .return_404{
+    .return_home{
         font-size: 16px;
     }
     

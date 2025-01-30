@@ -9,7 +9,7 @@
     margin-bottom: 38px;
 }
 
-.title_collapse {
+.collapse__title {
     margin: 0px;
     font-size: 24px;
     font-weight: 700;
@@ -30,11 +30,11 @@
 }
 
 
-.hidden {
+.collapse__button--hidden {
     visibility: hidden;
 }
 
-.icone_collapse {
+.collapse__icone {
     color: white;
     font-size: 20px;
     padding-bottom: 10px;
@@ -44,8 +44,12 @@
     right: 90%;
 }
 
+.collapse__icone--rotate {
+    transform: rotate(-180deg);
+}
+
 .div_collapse {
-    height: 100px;
+    height: 110px;
     width: 70%;
     background-color: #F6F6F6;
     color: black;
@@ -57,15 +61,11 @@
     transition: max-height 0.3s ease-out;
 }
 
-.text_collapse{
+.div_collapse__text{
     font-size: 12px;  
     padding: 15px;
     padding-right: 20px;
     margin: 0;
-}
-
-.rotate {
-    transform: rotate(-180deg);
 }
 
 .div_collapse.open {
@@ -79,9 +79,9 @@
     margin-bottom: 0px;
 }
 
-.icone_collapse.open{
-    bottom: 140%;
-    right: 140%;
+.collapse__icone.open{
+    top: -20%;
+    right: 150%;
 }
 
 @media (max-width: 767.98px) {
@@ -91,7 +91,7 @@
         border-radius: 5px;
     }
 
-    .title_collapse {
+    .collapse__title {
         font-size: 18px;
         padding: 14px;
     }
@@ -100,7 +100,7 @@
         width: 100%;
     }
 
-    .text_collapse{
+    .div_collapse__text{
         font-size: 11px;
     }
 }

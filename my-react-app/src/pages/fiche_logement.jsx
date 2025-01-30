@@ -36,8 +36,8 @@ const FicheLogementPage = () => {
       <Carrousel taille={Taille} Vignettes={Vignettes} />
       <div className='div_main'>
         <div className='div_main_title'>
-          <h1 className='title_logement'>{Object.title}</h1>
-          <h2 className='location_logement'>{Object.location}</h2>
+          <h1 className='div_main__title_logement'>{Object.title}</h1>
+          <h2 className='div_main__location_logement'>{Object.location}</h2>
           <div className='div_tags'>
             {Object.tags.map((elem, index) =>
               <Tag key={`${elem}-${index}`} titretag={elem} />
@@ -46,12 +46,12 @@ const FicheLogementPage = () => {
         </div>
         <div className='div_main_rating'>
           <div className='div_host'>
-            <p className='host_name'>{Object.host.name}</p>
-            <figure className='figure'><img src={Object.host.picture} /></figure>
+            <p className='div_host__host_name'>{Object.host.name}</p>
+            <figure className='div_host__figure'><img src={Object.host.picture} /></figure>
           </div>
           <div className='div_stars'>
             {range.map((elem, index) =>
-              value >= elem ? <i key={index} className="star fa-solid fa-star"></i> : <i key={elem} className="neutral fa-solid fa-star"></i>)}
+              value >= elem ? <i key={index} className="div_stars__star fa-solid fa-star"></i> : <i key={elem} className="div_stars__neutral fa-solid fa-star"></i>)}
           </div>
         </div>
       </div>

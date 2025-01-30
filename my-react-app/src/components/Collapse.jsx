@@ -10,15 +10,15 @@ function Collapse({ titre_collapse, description, custom_div, custom_collapse, cu
     return (
         <div className={custom_div}>
             <div className={`collapse ${custom_collapse} ${isOpen ? 'open' : ''}`}>
-                <h2 className='title_collapse'>{titre_collapse}</h2>
-                <button onClick={toggleCollapse}><span className='hidden'>Cliquer</span><i className={` ${isOpen ? 'rotate open' : ''} icone_collapse fa-solid fa-chevron-up`}></i></button>
+                <h2 className='collapse__title'>{titre_collapse}</h2>
+                <button onClick={toggleCollapse}><span className='collapse__button--hidden'>Cliquer</span><i className={` ${isOpen ? 'collapse__icone--rotate open' : ''} collapse__icone fa-solid fa-chevron-up`}></i></button>
 
             </div>
 
             <div>
                 {isOpen && (
                     <div className={`div_collapse ${custom_div_collapse} ${isOpen ? 'open' : ''}`}>
-                        <p className='text_collapse'>{description}</p>
+                        <p className='div_collapse__text'>{description}</p>
                     </div>
                 )}
             </div>

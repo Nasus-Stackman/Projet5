@@ -10,7 +10,7 @@ function Page404() {
             <Header />
             <h1 className='title_404'>404</h1>
             <h2 className='message_404' >Oups! La page que vous demandez n'existe pas.</h2>
-            <h3><Link className='return_404' to="/">Retourner sur la page d'accueil</Link></h3>
+            <h3><Link className='return_home' to="/">Retourner sur la page d'accueil</Link></h3>
             <Footer />
         </div>
     )

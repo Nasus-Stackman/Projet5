@@ -4,7 +4,7 @@ import '../styles/tag.css'
 function Tag({ titretag }) {
     return (
         <div className='tag'>
-            <p className='tag_title'>{titretag}</p>
+            <p className='tag__title'>{titretag}</p>
         </div>
     )
 }

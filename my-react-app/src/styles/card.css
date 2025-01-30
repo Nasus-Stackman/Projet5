@@ -12,7 +12,7 @@
     z-index: 1;
 }
 
-.title_card{
+.card__title{
     font-size: 18px;
     font-weight: 700;
     z-index: 2;
@@ -28,14 +28,14 @@
     line-height: 25px;
 }
 
-.style{
+.card_link{
     text-decoration: none; 
     width: 29%;
 }
 
 @media (max-width: 767.98px) {
 
-    .style{
+    .card_link{
         width: 100%;
     }
 }
