@@ -1,0 +1,48 @@
+$card-height: 340px;
+$card-border-radius: 10px;
+$card-title-font-size: 18px;
+$card-title-line-height: 25px;
+$card-title-color: white;
+
+@mixin card-style($height: $card-height, $width: 100%, $radius: $card-border-radius) {
+  height: $height;
+  width: $width;
+  border-radius: $radius;
+}
+
+.card {
+  @include card-style;
+}
+
+.card img {
+  @include card-style;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card__title {
+  font-size: $card-title-font-size;
+  font-weight: 700;
+  z-index: 2;
+  color: $card-title-color;
+  position: relative;
+  bottom: 30%;
+  left: 2%;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 70px;
+  padding-bottom: 5px;
+  max-width: 100%;
+  line-height: $card-title-line-height;
+}
+
+.card_link {
+  text-decoration: none;
+  width: 29%;
+}
+
+@media (max-width: 767.98px) {
+  .card_link {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+$tag-background-color: #FF6060;
+$tag-border-radius: 10px;
+$tag-height: 25px;
+$tag-font-size: 14px;
+$tag-font-size-small: 11px;
+
+.tag {
+  background-color: $tag-background-color;
+  border-radius: $tag-border-radius;
+  height: $tag-height;
+  text-align: center;
+  width: 100%;
+}
+
+.tag__title {
+  color: white;
+  font-size: $tag-font-size;
+  font-weight: 700;
+  margin: 0;
+  padding: 4px;
+
+  @media (max-width: 767.98px) {
+    font-size: $tag-font-size-small;
+  }
+}
