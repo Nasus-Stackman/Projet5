@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
 import Carrousel from '../components/carrousel';
 import Tag from '../components/Tag';
 import Collapse from '../components/Collapse'
-import Footer from '../components/footer';
 import Data from '../datas/liste.json'
 import '../styles/fiche_logement.css'
 import { useParams, useNavigate } from 'react-router-dom';
@@ -32,7 +30,6 @@ const FicheLogementPage = () => {
   const Taille = Vignettes.length
   return (
     <div>
-      <Header />
       <Carrousel taille={Taille} Vignettes={Vignettes} />
       <div className='div_main'>
         <div className='div_main_title'>
@@ -60,7 +57,6 @@ const FicheLogementPage = () => {
         <Collapse custom_div='div_1 div_2' custom_collapse='custom_collapse' custom_div_collapse='custom_div_collapse' titre_collapse='Équipements' description={Object.equipments.map((elem, index) =>
           <span key={index}>{elem}<br /></span>)} />
       </div>
-      <Footer />
     </div>
   );
 };

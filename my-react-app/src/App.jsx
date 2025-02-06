@@ -4,17 +4,21 @@ import Home from './pages/home';
 import Apropos from './pages/A_propos';
 import FicheLogementPage from './pages/fiche_logement';
 import Page404 from './pages/page404';
+import Header from './components/header';
+import Footer from './components/footer';
 
 const App = () => {
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/A_propos" element={<Apropos />} />
-          <Route path='/fiche_logement/:key' element={<FicheLogementPage/>}/>
-          <Route path="*" element={<Page404 />} />
-          <Route path='/404' element={<Page404 />} />
-        </Routes>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/A_propos" element={<Apropos />} />
+        <Route path='/fiche_logement/:key' element={<FicheLogementPage />} />
+        <Route path="*" element={<Page404 />} />
+        <Route path='/404' element={<Page404 />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };

@@ -1,8 +1,6 @@
 import React from 'react';
-import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import Footer from '../components/footer';
 import image2 from '../assets/Image_montagnes.png';
 import '../styles/A_propos.css'
 
@@ -14,19 +12,14 @@ const Apropos = () => {
         'La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l\'hôte qu\'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.']
     return (
         <div>
-            <Header />
             <Banner src={image2} alt='Image de montagnes' />
             <div className='div_apropos_collapse'>
                 {ListeTitre.map((elem, index) =>
                     <Collapse key={index} titre_collapse={elem} description={ListeDescription[index]} />
                 )}
             </div>
-
-            <Footer />
-
         </div>
     )
-
 }
 
 export default Apropos
