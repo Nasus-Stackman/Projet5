@@ -7,16 +7,16 @@ import '../styles/home.css'
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <Banner title='Chez vous, partout et ailleurs' src={image1} alt='Image cotière' />
-      <main className='main'>
+      <div className='main'>
         {
           Data.map((elem) =>
-            <Card key={elem.id} key1={elem.id} src={elem.cover} title={elem.title} />
+            <Card key={elem.id} id={elem.id} src={elem.cover} title={elem.title} />
           )
         }
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 

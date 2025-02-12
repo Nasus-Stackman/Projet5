@@ -11,14 +11,14 @@ const Apropos = () => {
         'La qualité du service est au coeur de notre engagement che Kasa. Nous veillons à ce que chaque interaction soit empreinte de respect et de bienveillance.',
         'La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l\'hôte qu\'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.']
     return (
-        <div>
+        <main>
             <Banner src={image2} alt='Image de montagnes' />
             <div className='div_apropos_collapse'>
                 {ListeTitre.map((elem, index) =>
                     <Collapse key={index} titre_collapse={elem} description={ListeDescription[index]} />
                 )}
             </div>
-        </div>
+        </main>
     )
 }
 

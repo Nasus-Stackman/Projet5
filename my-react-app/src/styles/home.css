@@ -13,6 +13,13 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 1024px) {
+  .main {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 767.98px) {
   .main {
     width: 90%;

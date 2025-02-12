@@ -29,7 +29,7 @@ const FicheLogementPage = () => {
   )
   const Taille = Vignettes.length
   return (
-    <div>
+    <main>
       <Carrousel taille={Taille} Vignettes={Vignettes} />
       <div className='div_main'>
         <div className='div_main_title'>
@@ -57,7 +57,7 @@ const FicheLogementPage = () => {
         <Collapse custom_div='div_1 div_2' custom_collapse='custom_collapse' custom_div_collapse='custom_div_collapse' titre_collapse='Équipements' description={Object.equipments.map((elem, index) =>
           <span key={index}>{elem}<br /></span>)} />
       </div>
-    </div>
+    </main>
   );
 };
 

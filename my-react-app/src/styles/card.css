@@ -2,6 +2,7 @@
   height: 340px;
   width: 100%;
   border-radius: 10px;
+  position: relative;
 }
 
 .card img {
@@ -10,6 +11,18 @@
   border-radius: 10px;
   object-fit: cover;
   z-index: 1;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  border-radius: 10px;
 }
 
 .card__title {
@@ -31,6 +44,13 @@
 .card_link {
   text-decoration: none;
   width: 29%;
+}
+
+@media (max-width: 1024px) {
+  .card__title{
+    padding-right: 40px;
+    bottom: 32%;
+  }
 }
 
 @media (max-width: 767.98px) {
